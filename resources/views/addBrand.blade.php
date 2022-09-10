@@ -87,6 +87,41 @@
 
 
 
+
+
+                                           <div class="mb-3">
+
+                                            <label>Select Category Name</label>
+                                           
+                                           <select name="cat_id" class="form-control input-default ">
+                                              
+
+
+                                           @foreach($cats as $cat)
+
+                                              <option value="{{$cat->id}}"> {{$cat->name}} </option>
+
+                                              @endforeach
+
+
+
+
+
+
+                                           </select>
+
+
+                                            </div>
+
+
+                                        
+
+
+
+
+
+
+
                                         <div class="mb-3">
                                             <input type="text" name="brandUrl" class="form-control input-rounded" placeholder="Enter brand Url">
                                         </div>
@@ -133,7 +168,7 @@
 
  <div class="mb-3">
 
-    <label>Brand Discription</label>
+  <label>Brand Discription</label>
  <div class="card-body custom-ekeditor">
                                 
 
@@ -152,15 +187,138 @@
 
 
 
-                            </div>
+   </div>
+</div>
+
+
+
+
+<div class="mb-3">
+
+  <label>Brand FAQS NO 1</label>
+ <div class="card-body custom-ekeditor">
+                                
+
+   <textarea name="fq1" id="fq1" rows="5" cols="100">
+       
+
+   </textarea>
+            
 
 
 
 
 
 
+     
 
- </div>
+
+
+   </div>
+</div>
+
+
+<div class="mb-3">
+
+  <label>Brand FAQS NO 2</label>
+ <div class="card-body custom-ekeditor">
+                                
+
+   <textarea name="fq2" id="fq2" rows="5" cols="100">
+       
+
+   </textarea>
+            
+
+
+
+
+
+
+     
+
+
+
+   </div>
+</div>
+
+
+
+<div class="mb-3">
+
+  <label>Brand FAQS NO 3</label>
+ <div class="card-body custom-ekeditor">
+                                
+
+   <textarea name="fq3" id="fq3" rows="5" cols="100">
+       
+
+   </textarea>
+            
+
+
+
+
+
+
+     
+
+
+
+   </div>
+</div>
+
+
+
+<div class="mb-3">
+
+  <label>Brand FAQS NO 4</label>
+ <div class="card-body custom-ekeditor">
+                                
+
+   <textarea name="fq4" id="fq4" rows="5" cols="100">
+       
+
+   </textarea>
+            
+
+
+
+
+
+
+     
+
+
+
+   </div>
+</div>
+
+
+
+<div class="mb-3">
+
+  <label>Brand FAQS NO5</label>
+ <div class="card-body custom-ekeditor">
+                                
+
+   <textarea name="fq5" id="fq5" rows="5" cols="100">
+       
+
+   </textarea>
+            
+
+
+
+
+
+
+     
+
+
+
+   </div>
+</div>
 
 
 

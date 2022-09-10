@@ -62,3 +62,6 @@ Route::post('edit_product/{id}', [ProductController::class, 'edit_product'])->na
 Route::get('addBrand', [BrandController::class, 'addBrand'])->name('addBrand');
 
 Route::post('saveBrand', [BrandController::class, 'saveBrand'])->name('saveBrand');
+
+
+Route::get('allbrands', [BrandController::class, 'index'])->name('allbrands');

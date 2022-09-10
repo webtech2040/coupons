@@ -3,17 +3,26 @@
 namespace App\Http\Controllers;
 use App\Models\Brands;
 use Illuminate\Http\Request;
+use App\Models\Category;
 
 class BrandController extends Controller
 {
     public function index(){
+        
 
-       return view('allBrand');  
+      $data = Brands::paginate('10');
+
+
+       return view('allbrands',compact('data'));  
     }
 
      public function addBrand(){
+     
+
+       $cats = Category::paginate('10');
+ 
     
-      return view('addBrand');    
+      return view('addBrand', compact('cats'));    
     }
 
 
@@ -35,7 +44,18 @@ class BrandController extends Controller
 
    
    $brand = new Brands();
+   $brand->cat_id = $request->cat_id;
+   
+   $brand->fq1 = $request->fq1;
+   $brand->fq2 = $request->fq2;
+   $brand->fq3 = $request->fq3;
+   $brand->fq4 = $request->fq4;
+   $brand->fq5 = $request->fq5;
 
+
+
+
+   $brand->slug = str_slug($request->brandName , "-");
    $brand->brandName = $request->brandName;
    $brand->brandUrl = $request->brandUrl;
    $brand->brandDiscription = $request->input('brandsdis');

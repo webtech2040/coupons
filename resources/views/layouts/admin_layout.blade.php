@@ -830,8 +830,8 @@
 							<span class="nav-text">Brands</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="chart-flot.html">Add Brand</a></li>
-                            <li><a href="chart-morris.html">All Brand</a></li>
+                            <li><a href="{{route('addBrand')}}">Add Brand</a></li>
+                            <li><a href="{{route('allbrands')}}">All Brand</a></li>
                             
                         </ul>
                     </li>
