@@ -176,7 +176,9 @@
        
 
    </textarea>
-            
+      
+
+          
 
 
 
@@ -199,11 +201,17 @@
  <div class="card-body custom-ekeditor">
                                 
 
-   <textarea name="fq1" id="fq1" rows="5" cols="100">
+   <textarea  id="body-editor" name="fq1"  rows="5" cols="100">
        
 
    </textarea>
             
+
+
+
+
+
+
 
 
 

@@ -840,8 +840,8 @@
 							<span class="nav-text">Coupons</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="ui-accordion.html">Add Coupon</a></li>
-                            <li><a href="ui-alert.html">All Coupons</a></li>
+                            <li><a href="{{route('addCoupon')}}">Add Coupon</a></li>
+                            <li><a href="{{route('allcoupons')}}">All Coupons</a></li>
                             
 
                         </ul>

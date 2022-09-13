@@ -6,6 +6,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\CouponController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -65,3 +66,12 @@ Route::post('saveBrand', [BrandController::class, 'saveBrand'])->name('saveBrand
 
 
 Route::get('allbrands', [BrandController::class, 'index'])->name('allbrands');
+/*     coupons Routes       */
+
+
+Route::get('addCoupon', [CouponController::class, 'addCoupon'])->name('addCoupon');
+
+Route::post('saveCoupon', [CouponController::class, 'saveCoupon'])->name('saveCoupon');
+
+Route::get('allcoupons', [CouponController::class, 'index'])->name('allcoupons');
+
